@@ -51,7 +51,7 @@ export const createAccount = async (req: Request, res: Response) => {
     });
 
     //res.send('User created');
-    res.status(201).json({ message: 'User created' });
+    res.status(201).json({ message: 'Usuario creado con exito' });
 
 }
 
