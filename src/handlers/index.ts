@@ -1,15 +1,10 @@
 import User from "../models/Users";
-import { validationResult } from "express-validator";
-import e, { Request, Response } from "express";
+import { Request, Response } from "express";
 import { hashPassword, checkPassword } from "../utils/auth";
 import slug from "slug";
-import { handleInputErrors } from "../middleware/validation";
 export const createAccount = async (req: Request, res: Response) => {
 
     //manejo de errores
-
-
-    
 
     const { email, password } = req.body;
 
